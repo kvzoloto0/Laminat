@@ -1,59 +1,607 @@
-/* Закрываем lightbox */
-.lightbox {
-  display: none;
+﻿body{
+    margin: 0;
+    padding: 0;
 }
 
-/* Открываем lightbox */
-.lightbox:target {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@font-face {                                                                /*подключение шрифтов*/
+    font-family: Exo2; /* Гарнитура шрифта */
+    src: url(fonts/Exo2.ttf); /* Путь к файлу со шрифтом */
+    font-family: 'Mplus 1p'; /* Гарнитура шрифта */
+    src: url(fonts/Mplus1p); /* Путь к файлу со шрифтом */
 }
 
-/* Содержимое lightbox  */
-.lightbox figcaption {
-  width: 25rem;
-  position: relative;
-  padding: 1.5em;
-  background-color: lightpink;
+nav {                                          /*навигация*/
+    display: flex;
+    height: 76px;
+}
+    
+.logo {                                         /*логотип*/
+    margin-left: 326px;
+    margin-top: 28px;
+    height: 80px;
 }
 
-/* Кнопка закрытия */
-.lightbox .close {
-  position: relative;
-  display: block;
+.block_with_text {
+    margin-top: 55px;
+    width: 302px;
+    height: 70px;
+    font-family: Century Gothic;
+    margin-left: 5px;
+    font-size: 25px;
+    line-height: 324%;
+    letter-spacing: 0.155em;
 }
 
-.lightbox .close::after {
-  right: -1rem;
-  top: -1rem;
-  width: 2rem;
-  height: 2rem;
-  position: absolute;
-  display: flex;
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  border-radius: 50%;
-  color: white;
-  content: "×";
-  cursor: pointer;
+.aminat {
+    font-weight: bold;
+    color: #786228;
 }
 
-/* Обертка lightbox  */
-.lightbox .close::before {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: rgba(0,0,0,.7);
-  content: "";
-  cursor: default;
+.Vitalii {
+    color: #434343;
+}
+
+.navigation {
+    margin-top: 65px;
+    margin-left: 134px;
+}
+
+.link_navigation {
+    margin-right: 71px;
+    font-family: Exo2, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 324%;
+    letter-spacing: 0.055em;
+    color: #282828;
+}
+
+content {                                   /*контент*/
+    display: inline-block;
+    width: 1268px;
+    height: 434px;
+    margin-left: 326px;
+    margin-top: 122px;
+}
+
+.provide {
+    width: 414px;
+    height: 87px;
+    font-family: Exo2, sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #503414;
+}
+
+.lines{                                             /*линия*/
+    margin-left: 0px;
+    border: none; /* Убираем границу */
+    background-color: #503414; /* Цвет линии */
+    height: 2px; /* Толщина линии */ 
+}
+
+#lines_1{                                             /*линия 1*/
+    width: 414px;
+}
+
+.color_years {
+    color: #FFAE44;
+}
+
+.text_years {
+    width: 420px;
+    height: 109px;
+    font-family: 'Mplus 1p', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 145%;
+}
+
+.button_reviews {                                      /*кнопка*/
+    margin-top: 60px;
+    margin-left: 5px;
+    width: 225px;
+    height: 67px;
+    border: solid #D1B995;
+    border-radius: 4px;
+    font-family: Exo2, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.06em;
+    color: #282828;
+    z-index: 1px;
+}
+
+.button_reviews_under {                            /*муляж под кнопкой*/
+    margin-top: -62px;
+    width: 218px;
+    height: 61px;
+    border: 3px solid #D1B995;
+    border-radius: 5px;
+    z-index: 2px;
+}
+
+.mother_with_child {                               /*фото мать с ребенком*/
+    margin-left: 480px;
+    margin-top: -425px;
+}
+
+aside {                                               /*переваги блок*/
+    margin-left: 326px;
+    margin-top: 40px;
+    width: 1272px;
+    height: 147px;
+}
+
+.benefits {                                           /*переваги слово*/
+    width: 163px;
+    height: 44px;
+    font-family: Exo2, sans-serif;
+    font-size: 30px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #503414;
+}
+
+#lines_2 {                                              /*линия 2*/
+    width: 163px;
+}
+
+.tree_benefits {                                                 /*3 переваги*/
+    display: flex;
+}
+
+.grad_benefits {                                                 /*градиент*/
+    background: linear-gradient(206.96deg, #FF6868 -29.76%, #FFDD2C 89.23%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.check_all {
+    margin-top: 37px; 
+    width: 86px;
+    height: 55px;
+}
+
+.check_all_text {
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 212px;
+    height: 58px;
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 22px;
+    line-height: 145%;
+    letter-spacing: 0.013em;
+    color: #282828;
+}
+
+.Vector {
+    margin-left: 133px;
+    margin-top: 37px;
+    width: 47px;
+    height: 55px;
+}
+
+.Vector_text {
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 279px;
+    height: 58px;
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 22px;
+    line-height: 145%;
+    letter-spacing: 0.013em;
+    color: #282828;
+}
+
+.phone {
+    margin-top: 37px;
+    margin-left: 129px;
+    width: 54px;
+    height: 55px;
+}
+
+.phone_text_1{
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 257px;
+    height: 58px;
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 22px;
+    line-height: 145%;
+    letter-spacing: 0.013em;
+    color: #282828;
+}
+
+.catalog_block {                                                                   /*каталог блок*/
+    margin-top: 64px;
+    margin-left: 306px;
+    width: 1288px;
+    height: 849px;
+}
+
+.catalog {                                                                                       /*каталог текст*/
+    margin-left: 20px;
+    width: 143px;
+    height: 34px;
+    font-family: Exo2, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #503414;
+}
+
+#lines_3 {                                                                                  /*линия 3*/
+    margin-left: 20px;
+    width: 143px;
+}
+
+.navigation_catalog {                                                                     /*навигация каталог*/
+    display: flex;
+    margin-top: 34px;
+    margin-left: 20px;
+}
+
+.link_navigation_catalog {
+    margin-right: 68px;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 40%;
+    letter-spacing: 0.06em;
+    color: #282828;
+}
+
+.catalog_image_1 {                                                                         /*фото ламината*/
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 20px;
+    width: 361px;
+    height: 278px;
+}
+
+.catalog_image_2 {
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 408px;
+    width: 361px;
+    height: 278px;
+}
+
+.catalog_image_3 {
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 796px;
+    width: 492px;
+    height: 713px;
+}
+
+.catalog_image_4 {
+    position: absolute;
+    margin-top: 333px;
+    margin-left: 20px;
+    width: 361px;
+    height: 408px;
+}
+
+.catalog_image_5 {
+    position: absolute;
+    margin-top: 333px;
+    margin-left: 408px;
+    width: 361px;
+    height: 118px;
+}
+
+.catalog_image_6 {
+    position: absolute;
+    margin-top: 478px;
+    margin-left: 408px;
+    width: 361px;
+    height: 118px;
+}
+
+.catalog_image_7 {
+    position: absolute;
+    margin-top: 623px;
+    margin-left: 408px;
+    width: 361px;
+    height: 118px;
+}
+
+.Low_price_catalog_block {                                                   /*Каталог низьких цін блок*/
+    margin-left: 326px;
+    margin-top: 60px;
+    width: 1268px;
+    height: 432px;
+}
+
+.Low_price_catalog {                                                             /*Каталог низьких цін*/
+    width: 332px;
+    height: 34px;
+    font-family: Exo2, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #503414;
+}
+
+#lines_4 {                                                                          /*линия 4*/
+    width: 332px;
+}
+
+.Low_price_catalog_img {                                                          /*дисплей флекс*/
+    display: flex;
+}
+
+.Low_price_catalog_image {                                                             /*фотки 4 ламината*/
+    width: 295.23px;
+    height: 296px;
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+.Time_tested_manufacturers_block {                                                    /*Провірені часом виробники блок*/
+    margin-top: 60px;
+    margin-left: 326px;
+    width: 1266.53px;
+    height: 152px;
+}
+
+.Time_tested_manufacturers {                                                            /*Провірені часом виробники*/
+    width: 449px;
+    height: 34px;
+    font-family: Exo2, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #503414;
+}
+
+#lines_5 {                                                                                      /*линия 5*/
+    width: 449px;
+}
+
+.Time_tested_manufacturers_img {                                                            /*дисплей флекс*/
+    display: flex;
+}
+
+.my_floor {                                                                                 /*логотипи компаний*/
+    margin-top: 45px;
+    width: 198px;
+    height: 46px;
+}
+
+.swiss_krono {
+    margin-top: 45px;
+    margin-left: 190px;
+    width: 192px;
+    height: 22px;
+}
+
+.e_red_square {
+    margin-top: 25px;
+    margin-left: 145px;
+    width: 196px;
+    height: 58px;
+}
+
+.egger {
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 769px;
+    width: 154px;
+    height: 26px;
+}
+
+.kronotex {
+    margin-top: 35px;
+    margin-left: 146px;
+    width: 198px;
+    height: 53px;
+}
+
+.Customer_feedback_block {                                                                     /*Відгуки клієнтів блок*/
+    margin-top: 88px;
+    margin-left: 326px;
+    width: 1142px;
+    height: 664px;
+}
+
+.Customer_feedback {                                                                              /*Відгуки клієнтів текст*/
+    width: 274px;
+    height: 34px;
+    font-family: Exo2, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #503414;
+}
+
+#lines_6 {                                                                                             /*линия 6*/                                                                            
+    width: 274px;
+}
+
+.Customer_feedback_block_img {                                                                        /*дисплей флекс*/
+    display: flex;
+    margin-left: 98px;
+    margin-top: 35px;
+}
+
+.Customer_feedback_block_image {                                                                         /*фидбеки*/
+    margin-left: 27px;
+    width: 321px;
+    height: 570px;
+}
+
+
+
+
+
+
+
+
+.Order_by_phone_block {                                                                    /*Замовляйте по телефону блок*/
+    margin-top: 60px;
+    margin-left: 326px;
+    width: 1268px;
+    height: 136px;
+}
+
+.Order_by_phone {                                                                                  /*Замовляйте по телефону текст*/
+    width: 626px;
+    height: 44px;
+    font-family: Exo2, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #503414;
+}
+
+.phone_number {                                                                                 /*номера телефона*/
+    margin-left: 43px;
+    width: 214px;
+    height: 44px;
+    font-family: Exo2, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 145%; 
+    letter-spacing: 0.05em;
+    color: #282828;
+}
+
+.viber {                                                                                             /*иконка вайбера*/
+    margin-left: 36px; 
+    width: 47px;
+    height: 50px;
+}
+
+.insta {                                                                                                /*иконка инсты*/
+    margin-left: 24px;
+    width: 47px;
+    height: 47px;
+}
+
+#lines_7 {                                                                                                /*линия 7*/
+   width: 1268px; 
+}        
+
+.phone_text_2 {
+    margin-top: 28px;
+    width: 578px;
+    height: 36px;
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 25px;
+    line-height: 145%;
+    letter-spacing: 0.013em;
+    color: #282828;
+}
+
+.numbers_users {                                                                                         /*текстовая кнопка*/
+    margin-top: 8px;
+    margin-left: 120px;
+    width: 290px;
+    height: 44px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 4px rgba(53, 22, 8, 0.44);
+    border-radius: 4px;
+    font-family: 'Mplus 1p', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 145%;
+    letter-spacing: 0.013em;
+    color: #282828;
+    opacity: 0.7;
+}
+
+.Store_address_block {                                                                /*Адреса магазину блок*/
+    margin-top: 69px;
+    margin-left: 326px;
+    width: 1271px;
+    height: 757px;
+}
+
+.Store_address {                                                                   /*Адреса магазину текст*/
+    width: 280px;
+    height: 34px;
+    font-family: Exo2, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #503414;
+}
+
+.Storage {                                                                           /*склад*/
+    margin-left: 910px;
+    width: 102px;
+    height: 34px;
+    font-family: Exo2, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145%;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #503414;
+}
+
+#lines_8 {                                                                           /*линия 8*/
+    width: 280px;
+}
+
+#lines_9 {                                                                         /*линия 9*/
+    margin-top: -15px;
+    margin-left: 1168px;
+    width: 102px;
+}
+
+.Store_address_text_1 {                                                         /*текст 1*/
+    width: 701px;
+    height: 36px;
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 25px;
+    line-height: 145%;
+    letter-spacing: 0.013em;
+    color: #282828;
+}
+
+.Store_address_text_2 {                                                                 /*текст 2*/
+    margin-left: 340px;
+    width: 268px;
+    height: 36px;
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 25px;
+    line-height: 145%;
+    text-align: right;
+    letter-spacing: 0.013em;
+    color: #282828;
+}
+
+.maps {                                                                             /*карта*/
+    margin-top: 40px;
+    width: 1271px;
+    height: 626px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.logo_on_maps {                                                                          /*логотип на карте*/
+    position: absolute;
+    margin-top: 480px;
+    margin-left: -350px; 
+    z-index: 2;
+}
+
+.laminat_Vitalii {
+    position: absolute;
+    margin-top: 560px;
+    margin-left: -600px; 
+    z-index: 2;
 }
