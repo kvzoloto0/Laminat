@@ -605,3 +605,146 @@ aside {                                               /*переваги бло�
     margin-left: -600px; 
     z-index: 2;
 }
+
+footer {                                                                              /*подвал*/
+    margin-top: 93px;
+    width: 100%;
+    height: 217px;
+    bottom: 0;
+    background: grey;
+}
+
+.logo_footer {                                                                        /*логотип*/
+    position: absolute;
+    margin-left: 326px;
+    margin-top: -30px;
+    width: 46px;
+    height: 59px;
+}
+
+.block_with_text_footer_1 {                                                         /*аминат Виталий*/
+    margin-left: 378px;
+    height: 70px;
+    width: 234px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0.155em;
+}
+
+.block_with_text_footer_2{
+    margin-top: -40px;
+    margin-left: 1009px;
+    width: 394px;
+    height: 40px;
+    line-height: 145%;
+    text-align: right;
+}
+
+.call_footer_1 {
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.013em;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.call_footer_2 {
+    font-family: Exo2, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #D6D6D6;
+}
+
+.block_with_text_footer_3 {
+    margin-top: -40px;
+    margin-left: 1410px;
+    width: 184px;
+    height: 50px;
+}
+
+.call_footer_3 {
+    font-family: Exo2, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 100%;
+    text-align: right;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.block_with_text_footer_4 {
+    display: inline-block;
+    margin-left: 328px;
+    width: 170px;
+    height: 95px;
+}
+
+.link_navigation_footer {
+    font-family: Exo2, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.block_with_text_footer_5 {
+    display: inline-block;
+    width: 170px;
+    height: 95px;
+}
+
+.block_with_text_footer_6 {
+    margin-top: -40px;
+    margin-left: 802px;
+    width: 515px;
+    height: 58px;
+    font-family: Exo2, sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.address_image_1 {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 110px;
+}
+
+.address_image_2 {
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 110px;
+}
+
+.block_with_text_footer_7 {
+    margin-top: -60px;
+    margin-left: 1400px;
+    width: 180px;
+    height: 40px;
+}
+
+.mail {
+    font-family: Exo2, sans-serif;
+    font-size: 18px;
+    line-height: 365.5%;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.viber_footer {
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 1473px;
+}
+
+.insta_footer {
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 1536px;
+}
