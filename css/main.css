@@ -1,4 +1,4 @@
-﻿body{
+body{
     margin: 0;
     padding: 0;
 }
@@ -333,15 +333,66 @@ aside {                                               /*переваги бло�
     width: 332px;
 }
 
-.Low_price_catalog_img {                                                          /*дисплей флекс*/
-    display: flex;
+.container {                                                                    /*слайдер ламинат*/
+    max-width: 1400px;
+    margin-left: -20px;
 }
 
-.Low_price_catalog_image {                                                             /*фотки 4 ламината*/
-    width: 295.23px;
-    height: 296px;
-    margin-top: 28px;
-    margin-left: 20px;
+.slider {
+    border: 2px solid white;
+    width: 1284px;
+    height: 256px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-line {                                                                 /*картинки для слайдера*/
+    width: 1024px;
+    height: 256px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider-line img{
+    margin-left: 25px;
+}
+
+.slider_button {                                                                   /*слайдер кнопка*/
+    position: absolute;
+    margin-top: -180px;
+    border-radius: 90%;
+    opacity: 0.5;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: #FFAD44;
+    background: white;
+}
+
+.slider_button:hover{
+    background: linear-gradient(206.96deg, #FF6868 -29.76%, #FFDD2C 89.23%);
+    color: white;
+}
+
+.slider_button:active {
+    background: white;
+}
+
+.slider_button:focus {
+    outline: none;
+}
+
+.slider_text {
+    font-size: 25px;
+}
+
+#slider-prev {                                                                              /*кнопка вперед*/
+    margin-left: -80px;
+}
+
+#slider-next {                                                                                 /*кнопка назад*/
+    margin-left: 1300px;
 }
 
 .Time_tested_manufacturers_block {                                                    /*Провірені часом виробники блок*/
@@ -438,13 +489,6 @@ aside {                                               /*переваги бло�
     width: 321px;
     height: 570px;
 }
-
-
-
-
-
-
-
 
 .Order_by_phone_block {                                                                    /*Замовляйте по телефону блок*/
     margin-top: 60px;
@@ -748,3 +792,31 @@ footer {                                                                        
     margin-top: -75px;
     margin-left: 1536px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
