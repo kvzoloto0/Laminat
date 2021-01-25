@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ItGid.info - простой слайдер</title>
+    <title>Vlaminat</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-        <nav>                                                              <!--навигация-->
+    <nav>                                                              <!--навигация-->
         <img class="logo" src="img/L%20logo.png">
         <div class="block_with_text">
             <span class="aminat">амінат</span>
             <span class="Vitalii">Віталій</span>
         </div>
-        <div class="navigation">                                    
-            <a class="link_navigation" href="#">відгуки</a>
-            <a class="link_navigation" href="#">переваги</a>
-            <a class="link_navigation" href="#">каталог</a>
-            <a class="link_navigation" href="#">бренди</a>
-            <a class="link_navigation" href="#">контакти</a>
+        <div class="navigation_1">                                    
+            <a class="link_navigation" href="#anchor_reviews">відгуки</a>
+            <a class="link_navigation" href="#anchor_benefits">переваги</a>
+            <a class="link_navigation" href="#anchor_catalog">каталог</a>
+            <a class="link_navigation" href="#anchor_shares">акції</a>
+            <a class="link_navigation" href="#anchor_tested_manufacturers">бренди</a>
+            <a class="link_navigation" href="#anchor_contact">контакти</a>
         </div>
     </nav>
     
@@ -37,10 +38,11 @@
         </h2>
         <input type="submit" name="reviews" value="відгуки" class="button_reviews">                     <!--кнопка-->
         <div class="button_reviews_under"></div>                                                        <!--муляж под кнопокой-->
-        <img class="mother_with_child" src="img/mother_with_child.jpg">                                  <!--фото мама с ребенком-->
+        <img class="mother_with_child" class="minimized" src="img/mother_with_child.jpg">                                  <!--фото мама с ребенком-->
     </content>
     
     
+    <a name="anchor_benefits"></a>
     <aside>                                                                                              <!--переваги-->
         <span class="benefits">Переваги</span>
         <hr class="lines" id="lines_2">                                                                               <!--линия 2-->
@@ -61,6 +63,8 @@
     </aside>
     
     
+    
+    <a name="anchor_catalog"></a>
     <div class="catalog_block">                                                                    <!--каталог блок-->
         <span class="catalog">Каталог</span>                                                             <!--каталог текст-->
         <hr class="lines" id="lines_3">                                                                        <!--линия 3-->
@@ -69,15 +73,17 @@
             <a class="link_navigation_catalog" href="#">Паркетна дошка</a>
             <a class="link_navigation_catalog" href="#">Плинтуса</a>
         </div>
-        <img class="catalog_image_1" src="img/catalog_image_1.png">                                   <!--фото ламината-->
-        <img class="catalog_image_2" src="img/catalog_image_2.png">
-        <img class="catalog_image_3" src="img/catalog_image_3.png">
-        <img class="catalog_image_4" src="img/catalog_image_4.png">
-        <img class="catalog_image_5" src="img/catalog_image_5.png">
-        <img class="catalog_image_6" src="img/catalog_image_6.png">
-        <img class="catalog_image_7" src="img/catalog_image_7.png">
+        <img id="catalog_image_1" class="minimized" src="img/catalog_image_1.png" >                                   <!--фото ламината-->
+        <img id="catalog_image_2" class="minimized" src="img/catalog_image_2.png">
+        <img id="catalog_image_3" class="minimized" src="img/catalog_image_3.png">
+        <img id="catalog_image_4" class="minimized" src="img/catalog_image_4.png">
+        <img id="catalog_image_5" class="minimized" src="img/catalog_image_5.png">
+        <img id="catalog_image_6" class="minimized" src="img/catalog_image_6.png">
+        <img id="catalog_image_7" class="minimized" src="img/catalog_image_7.png">
     </div>
     
+    
+    <a name="anchor_shares"></a>
     <div class="Low_price_catalog_block">                                                            <!--Каталог низьких цін блок-->
         <span class="Low_price_catalog">Каталог низьких цін</span>                                     <!--Каталог низьких цін текст-->
         <hr class="lines" id="lines_4">                                                                        <!--линия 4-->
@@ -89,14 +95,15 @@
     <div class="container">                                                           <!--слайдер ламинат-->
         <div class="slider">
             <div class="slider-line">                                                   <!--картинки для слайдера-->
-                <img src="img/image.png" alt="">
-                <img src="img/image.png" alt="">
-                <img src="img/image.png" alt="">
-                <img src="img/image.png" alt="">
-                <img src="img/image.png" alt="">
-                <img src="img/image.png" alt="">
-                <img src="img/image.png" alt="">
-                <img src="img/image.png" alt="">
+                <img src="img/image.png" class="minimized" alt="">
+                <img src="img/image.png" class="minimized" alt="">
+                <img src="img/image.png" class="minimized" alt="">
+                <img src="img/image.png" class="minimized" alt="">
+                <img src="img/image.png" class="minimized" alt="">
+                <img src="img/image.png" class="minimized" alt="">
+                <img src="img/image.png" class="minimized" alt="">
+                <img src="img/image.png" class="minimized" alt="">
+                <img src="img/image.png" class="minimized" alt="">
             </div>
         </div>
         <button class="slider_button" id="slider-prev">                                  <!--кнопка вперед-->     <!--слайдер кнопка-->
@@ -108,6 +115,8 @@
     </div>
     </div>
     
+    
+    <a name="anchor_tested_manufacturers"></a>
     <div class="Time_tested_manufacturers_block">                                             <!--Провірені часом виробники блок-->
         <span class="Time_tested_manufacturers">Провірені часом виробники</span>              <!--Провірені часом виробники текст-->
         <hr class="lines" id="lines_5">                                                                        <!--линия 5-->
@@ -121,17 +130,33 @@
     </div>
     
     
+    <a name="anchor_reviews"></a>
     <div class="Customer_feedback_block">                                                               <!--Відгуки клієнтів блок-->
         <span class="Customer_feedback">Відгуки клієнтів</span>                                                  <!--Відгуки клієнтів текст-->
         <hr class="lines" id="lines_6">                                                                        <!--линия 6-->
-        <div class="Customer_feedback_block_img">                                                               <!--дисплей флекс-->
-            <img class="Customer_feedback_block_image" src="img/feedback.png">                                        <!--фидбеки-->
-            <img class="Customer_feedback_block_image" src="img/feedback.png">
-            <img class="Customer_feedback_block_image" src="img/feedback.png">
+        <div class="container-feedback">                                                           <!--слайдер ламинат-->
+        <div class="slider-feedback">
+            <div class="slider-line-feedback">                                                   <!--картинки для слайдера-->
+                <img src="img/feedback.png" class="minimized" alt="">
+                <img src="img/feedback.png" class="minimized" alt="">
+                <img src="img/feedback.png" class="minimized" alt="">
+                <img src="img/feedback.png" class="minimized" alt="">
+                <img src="img/feedback.png" class="minimized" alt="">
+                <img src="img/feedback.png" class="minimized" alt="">
+                <img src="img/feedback.png" class="minimized" alt="">
+                <img src="img/feedback.png" class="minimized" alt="">
+            </div>
+        </div>
+        <button class="slider_button-feedback" id="slider-prev-feedback">                                  <!--кнопка вперед-->     <!--слайдер кнопка-->
+            <span class="slider_text-feedback"> &lt;&lt; </span>
+        </button> 
+        <button class="slider_button-feedback" id="slider-next-feedback">                                    <!--кнопка назад-->
+            <span class="slider_text-feedback"> &gt;&gt; </span>
+        </button>                                                                                         
         </div>
     </div>
     
-    
+    <a name="anchor_contact"></a>
     <div class="Order_by_phone_block">                                                                    <!--Замовляйте по телефону блок-->
         <span class="Order_by_phone">Замовляйте по телефону з 8:00 до 21:00</span>                         <!--Замовляйте по телефону текст-->
         <span class="phone_number">097 548 5255 &nbsp; 098 500 4444</span>                                  <!--номера телефона-->
@@ -173,16 +198,16 @@
             <span class="call_footer_3">096 053 0420</span>
         </div>
         <div class="block_with_text_footer_4">
-            <a class="link_navigation_footer" href="#">Відгуки</a>
-            <a class="link_navigation_footer" href="#">Переваги</a>
-            <a class="link_navigation_footer" href="#">Бренди</a>
+            <a class="link_navigation_footer" href="#anchor_reviews">Відгуки</a>
+            <a class="link_navigation_footer" href="#anchor_benefits">Переваги</a>
+            <a class="link_navigation_footer" href="#anchor_tested_manufacturers">Бренди</a>
         </div>
         <div class="block_with_text_footer_5">
-            <a class="link_navigation_footer" href="#">Акції</a>
+            <a class="link_navigation_footer" href="#anchor_shares">Акції</a>
             <br>
-            <a class="link_navigation_footer" href="#">Каталог</a>
+            <a class="link_navigation_footer" href="#anchor_catalog">Каталог</a>
             <br>
-            <a class="link_navigation_footer" href="#">Як замовити</a>
+            <a class="link_navigation_footer" href="#anchor_contact">Як замовити</a>
         </div>
         <img class="address_image_1" src="img/address.png">
         <img class="address_image_2" src="img/address.png">
@@ -197,7 +222,9 @@
         <img class="viber_footer" src="img/viber.png">
         <img class="insta_footer" src="img/insta.png">
     </footer>
+    
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
